@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">پشتیبانی</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_title">برنامه پشتیبانی</string>
+    <string name="username_hint">نام کاربری</string>
+    <string name="password_hint">رمز عبور</string>
+    <string name="login_btn_text">ورود</string>
+    <string name="save_btn_text">ذخیره</string>
+    <string name="close_btn_text">انصراف</string>
+    <string name="center_info">اطلاعات مرکز</string>
+    <string name="center_name_hint">نام مرکز را وارد کنید</string>
+    <string name="IP_hint">آی پی خود را وارد کنید</string>
+    <string name="port_hint">پورت خود را وارد کنید</string>
+</resources>
