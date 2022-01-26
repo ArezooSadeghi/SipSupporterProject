@@ -7,10 +7,10 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layout_dialog_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/layout_bg_one"
+        android:layoutDirection="ltr"
         android:padding="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +27,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/text_view_bg_one"
-                android:fontFamily="@font/yekan"
+                android:fontFamily="@font/bold"
                 android:padding="16dp"
                 android:text="@string/login_title"
                 android:textColor="@color/black"
@@ -59,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_person"
                     android:drawableTint="@color/black"
-                    android:fontFamily="@font/yekan"
+                    android:fontFamily="@font/regular"
                     android:maxLines="1"
                     android:textColor="@color/black"
                     android:textCursorDrawable="@drawable/custom_cursor" />
@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_lock"
                     android:drawableTint="@color/black"
-                    android:fontFamily="@font/yekan"
+                    android:fontFamily="@font/regular"
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:textColor="@color/black"
@@ -104,8 +104,9 @@
                 android:layout_marginLeft="64dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginRight="16dp"
-                android:fontFamily="@font/yekan"
+                android:fontFamily="@font/regular"
                 android:textColor="@color/black"
+                android:textDirection="rtl"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -143,8 +144,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginRight="80dp"
-            android:background="@drawable/button_bg"
-            android:fontFamily="@font/yekan"
+            android:background="@drawable/button_bg_one"
+            android:fontFamily="@font/regular"
             android:text="@string/login_btn_text"
             android:textColor="@color/black"
             android:textSize="14sp"

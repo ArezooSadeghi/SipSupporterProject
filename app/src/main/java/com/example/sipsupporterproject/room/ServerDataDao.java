@@ -1,9 +1,12 @@
 package com.example.sipsupporterproject.room;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Query;
 
 import com.example.sipsupporterproject.model.ServerData;
+
+import java.util.List;
 
 @Dao
 public interface ServerDataDao {
@@ -19,4 +22,7 @@ public interface ServerDataDao {
 
     @Query("SELECT * FROM server_data_tb WHERE centerName = :centerName")
     ServerData select(String centerName);
+
+    @Query("SELECT * FROM server_data_tb")
+    LiveData<List<ServerData>> selectAll();
 }

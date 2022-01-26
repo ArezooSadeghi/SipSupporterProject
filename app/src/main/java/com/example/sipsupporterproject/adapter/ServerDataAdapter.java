@@ -10,13 +10,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.sipsupporterproject.R;
 import com.example.sipsupporterproject.databinding.ServerDataAdapterItemBinding;
 import com.example.sipsupporterproject.model.ServerData;
+import com.example.sipsupporterproject.viewmodel.LoginViewModel;
 
 import java.util.List;
 
 public class ServerDataAdapter extends RecyclerView.Adapter<ServerDataAdapter.ServerDataHolder> {
+    private LoginViewModel viewModel;
     private List<ServerData> serverDataList;
 
-    public ServerDataAdapter(List<ServerData> serverDataList) {
+    public ServerDataAdapter(LoginViewModel viewModel, List<ServerData> serverDataList) {
+        this.viewModel = viewModel;
         this.serverDataList = serverDataList;
     }
 
@@ -34,6 +37,13 @@ public class ServerDataAdapter extends RecyclerView.Adapter<ServerDataAdapter.Se
     public void onBindViewHolder(@NonNull ServerDataHolder holder, int position) {
         ServerData serverData = serverDataList.get(position);
         holder.bind(serverData);
+        holder.binding.ivDelete.setOnClickListener(v -> {
+            viewModel.getDeleteClicked().setValue(serverData.getCenterName());
+        });
+
+        holder.binding.ivEdit.setOnClickListener(v -> {
+            viewModel.getEditClicked().setValue(serverData.getCenterName());
+        });
     }
 
     @Override
@@ -51,7 +61,7 @@ public class ServerDataAdapter extends RecyclerView.Adapter<ServerDataAdapter.Se
 
         private void bind(ServerData serverData) {
             binding.tvCenterName.setText(serverData.getCenterName());
-            binding.tvCenterName.setText(serverData.getIP() + ":" + serverData.getPort());
+            binding.tvAddress.setText(serverData.getIP() + ":" + serverData.getPort());
         }
     }
 }

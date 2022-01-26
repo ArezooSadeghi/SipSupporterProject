@@ -12,6 +12,12 @@ public class ServerData {
     private String IP;
     private String port;
 
+    public ServerData(@NonNull String centerName, String IP, String port) {
+        this.centerName = centerName;
+        this.IP = IP;
+        this.port = port;
+    }
+
     public String getCenterName() {
         return centerName;
     }

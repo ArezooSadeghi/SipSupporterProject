@@ -7,8 +7,18 @@
     <string name="login_btn_text">ورود</string>
     <string name="save_btn_text">ذخیره</string>
     <string name="close_btn_text">انصراف</string>
+    <string name="confirmation_btn_text">تایید</string>
+    <string name="yes_btn_text">بله</string>
+    <string name="no_btn_text">خیر</string>
     <string name="center_info">اطلاعات مرکز</string>
     <string name="center_name_hint">نام مرکز را وارد کنید</string>
     <string name="IP_hint">آی پی خود را وارد کنید</string>
     <string name="port_hint">پورت خود را وارد کنید</string>
+    <string name="title_warn_dialog">توجه</string>
+    <string name="title_error_dialog">خطا</string>
+    <string name="required_center_info">لطفا اطلاعات مرکز را وارد کنید</string>
+    <string name="fill_required_info">لطفا اطلاعات خواسته شده را وارد کنید</string>
+    <string name="duplicate_center_name">نام مرکز تکراری می باشد</string>
+    <string name="incorrect_format">فرمت IP یا port اشتباه می باشد</string>
+    <string name="delete_server_data_question">آیا می خواهید اطلاعات مرکز انتخاب شده را حذف کنید؟</string>
 </resources>

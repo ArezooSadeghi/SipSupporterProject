@@ -11,7 +11,7 @@ import com.example.sipsupporterproject.R;
 import com.example.sipsupporterproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    protected ActivityMainBinding binding;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

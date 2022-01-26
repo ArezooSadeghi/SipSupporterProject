@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layoutDirection="ltr"
+        android:padding="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg_two"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_bg_three"
+                android:fontFamily="@font/bold"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="spread" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:layout_constraintWidth_default="spread" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_two"
+            android:fontFamily="@font/regular"
+            android:text="@string/yes_btn_text"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="@id/layout_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight="true"
+            app:layout_constraintStart_toEndOf="@id/btn_no"
+            app:layout_constraintTop_toBottomOf="@id/layout_dialog" />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_two"
+            android:fontFamily="@font/regular"
+            android:text="@string/no_btn_text"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="@id/layout_dialog"
+            app:layout_constraintEnd_toStartOf="@id/btn_yes"
+            app:layout_constraintHeight="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_dialog" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
